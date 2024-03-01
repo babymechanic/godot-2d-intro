@@ -1,0 +1,19 @@
+﻿Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "godot_2d_intro", "godot_2d_intro.csproj", "{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+	Debug|Any CPU = Debug|Any CPU
+	ExportDebug|Any CPU = ExportDebug|Any CPU
+	ExportRelease|Any CPU = ExportRelease|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.ExportDebug|Any CPU.ActiveCfg = ExportDebug|Any CPU
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.ExportDebug|Any CPU.Build.0 = ExportDebug|Any CPU
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.ExportRelease|Any CPU.ActiveCfg = ExportRelease|Any CPU
+		{FE2FA02C-7FC8-4536-9C21-D35A1D8B1A16}.ExportRelease|Any CPU.Build.0 = ExportRelease|Any CPU
+	EndGlobalSection
+EndGlobal
