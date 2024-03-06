@@ -1,5 +1,4 @@
 using Godot;
-using System;
 
 public partial class Main : Node
 {
@@ -20,7 +19,10 @@ public partial class Main : Node
 	{
 		GetNode<Timer>("MobTimer").Stop();
 		GetNode<Timer>("ScoreTimer").Stop();
+		HudNode.ShowGameOver();
 	}
+
+	private Hud HudNode => GetNode<Hud>("HUD");
 
 	public void NewGame()
 	{
@@ -29,11 +31,16 @@ public partial class Main : Node
 		var startPosition = GetNode<Marker2D>("StartPosition");
 		player.Start(startPosition.Position);
 		GetNode<Timer>("StartTimer").Start();
+
+		var hud = HudNode;
+		hud.UpdateScore(_score);
+		hud.ShowMessage("Get Ready!");
 	}
 
 	private void OnScoreTimerTimeout()
 	{
 		_score++;
+		HudNode.UpdateScore(_score);
 	}
 
 	private void OnStartTimeOut()
